@@ -26,9 +26,6 @@ class Validator implements ValidationInterface
                 return $this->validated->isValid();
             }
 
-            /**
-             * @return array<array-key, string>
-             */
             public function getErrors(): array
             {
                 return $this->validated->getErrors();

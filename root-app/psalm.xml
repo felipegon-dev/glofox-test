@@ -12,6 +12,7 @@
             <directory name="./tests"/>
             <file name="app/src/Infrastructure/App.php"/>
             <file name="app/src/Infrastructure/Response/JsonResponse.php" />
+            <file name="app/src/Infrastructure/Request/InputPayload.php" />
         </ignoreFiles>
     </projectFiles>
 </psalm>

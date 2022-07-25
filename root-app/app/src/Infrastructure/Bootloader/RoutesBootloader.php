@@ -26,8 +26,9 @@ class RoutesBootloader extends Bootloader
     {
         $router->setRoute(
             'api',
-            (new Route('/', new Controller(ApiController::class)))
+            (new Route('/classes', new Controller(ApiController::class)))
                 ->withDefaults(['action' => 'index'])
+                ->withVerbs('POST')
         );
     }
 }

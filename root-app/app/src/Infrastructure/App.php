@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace App\Infrastructure;
 
 use App\Infrastructure\Bootloader\ExceptionHandlerBootLoader;
+use App\Infrastructure\Bootloader\InjectionBootLoader;
 use App\Infrastructure\Bootloader\LoggingBootloader;
 use App\Infrastructure\Bootloader\RoutesBootloader;
 use Spiral\Bootloader as Framework;
@@ -78,6 +79,8 @@ class App extends Kernel
         RoadRunnerBridge\CommandBootloader::class,
 
         ExceptionHandlerBootLoader::class,
+
+        InjectionBootLoader::class
     ];
 
     /*
